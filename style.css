@@ -29,6 +29,10 @@ a, button {
     cursor: pointer;
 }
 
+li {
+    list-style: none;
+}
+
 body.body {
     background-color: rgb(25,25,25);
     color: white;
@@ -72,6 +76,12 @@ button.btn-submit {
 
 img.img-magnifier {
     width: 30%;
+    height: auto;
+    opacity: 0.8;
+}
+
+img[class|="icon"] {
+    width: 50%;
     height: auto;
 }
 
