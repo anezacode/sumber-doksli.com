@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    zoom: 1;
+    zoom: 0.95;
+    transition: 0.2s;
 }
 
 ::selection {
@@ -14,7 +15,8 @@ a, input, br, img {
 }
 
 a {
-    color: gray;
+    color: white;
+    text-decoration: none;
 }
 
 a, button {
@@ -25,48 +27,20 @@ body.body {
     background-color: rgb(25,25,25);
     color: white;
     font-family: poppins;
-    margin: 20px;
-}
-
-button.btn-nav {
-    padding: 10px;
-    width: 50px;
-    height: auto;
-    border-radius: 10px;
-    background: none;
-    border: none;
-    color: white;
-}
-
-.btn-nav:hover {
-    background: rgb(50,50,50);
-}
-
-img.nav-icon {
-    width: 100%;
-    height: auto;
-}
-
-div#setting {
-    display: none;
-    position: absolute;
 }
 
 div.content {
     text-align: center;
-}
-
-div.content form {
-    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.input {
     background-color: white;
     border-radius: 20px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    width: 40vh;
+    width: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -95,13 +69,16 @@ img.img-magnifier {
     height: auto;
 }
 
-div.document {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+div#dataContent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+div.values {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 10%);
 }
 
 section.box-content {
@@ -114,15 +91,20 @@ section.box-content {
 }
 
 img.img-content {
-    width: 100%;
-    height: auto;
+    width: 18px;
+    height: 180px;
     border-radius: 10px;
     border: 1px solid rgb(75,75,75);
-    filter: brightness(50%);
+    filter: brightness(0.5);
+    line-height: 2;
 }
 
 section.box-content:hover img.img-content {
     filter: brightness(0.9);
+}
+
+section.box-content:active {
+    filter: brightness(0.7);
 }
 
 h3.h-content {
