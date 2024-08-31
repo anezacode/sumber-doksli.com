@@ -75,14 +75,19 @@ button.btn-submit {
 }
 
 img.img-magnifier {
-    width: 30%;
+    width: 15px;
     height: auto;
-    opacity: 0.8;
+    opacity: 0.5;
+}
+
+button[type="submit"]:hover img.img-magnifier {
+    opacity: 1;
 }
 
 img[class|="icon"] {
-    width: 50%;
+    width: 28px;
     height: auto;
+    margin: 10px;
 }
 
 div#dataContent {
