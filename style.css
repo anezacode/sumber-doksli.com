@@ -2,8 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    zoom: 0.95;
+    zoom: 1;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+    *, html {
+        zoom: 0.95;
+    }
 }
 
 ::selection {
