@@ -49,18 +49,20 @@ div.content {
 
 div.input {
     background-color: white;
-    border-radius: 20px;
-    width: 300px;
+    border-radius: 30px;
+    width: 320px;
     display: flex;
+    padding: 2px;
     justify-content: space-between;
 }
 
 input.bar-search {
     background: none;
     border: none;
-    padding: 10px 0px 10px 20px;
-    width: 310px;
+    width: 100%;
     font-family: poppins;
+    vertical-align: middle;
+    padding-left: 15px;
 }
 
 input.bar-search:focus {
@@ -71,16 +73,18 @@ button.btn-submit {
     background: none;
     border: none;
     width: 50px;
+    padding: 5px;
     cursor: pointer;
 }
 
-img.img-magnifier {
-    width: 15px;
+img.img-submit {
+    width: 60%;
     height: auto;
     opacity: 0.5;
+    vertical-align: middle;
 }
 
-button[type="submit"]:hover img.img-magnifier {
+button[type="submit"]:hover img.img-submit {
     opacity: 1;
 }
 
@@ -90,6 +94,9 @@ img[class|="icon"] {
     margin: 10px;
 }
 
+ul {
+    display: flex;
+}
 div#dataContent {
     display: flex;
     flex-wrap: wrap;
