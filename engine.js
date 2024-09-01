@@ -1,7 +1,8 @@
 function sumberDoksli() {
     const doksli = document.getElementById('bar-search').value.trim().toLowerCase();
     const keyword = [
-        "si imut dari laut jawa", "kapal karam"
+        "si imut dari laut jawa",
+        "kapal karam"
     ];
     const dok1 = document.getElementById('dok1');
 
