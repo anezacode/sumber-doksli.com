@@ -111,15 +111,14 @@ img[class|="icon"] {
 }
 
 div.indeks-value {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    display: flex;
-    flex-wrap: wrap;
 }
 
-div.doksli {
+div[class$="doksli"] {
     display: none;
 }
 
