@@ -1,5 +1,5 @@
 function openSetting() {
-    const set = document.getElementById("language");
+    const set = document.getElementById("box-setting");
     if (set.style.display === "block") {
         set.style.display = "none";
     } else {

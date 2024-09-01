@@ -39,8 +39,12 @@ body.body {
     font-family: poppins;
 }
 
-tr#language {
+table.box-setting {
     display: none;
+}
+
+table.box-setting tr td:first-child {
+    padding-right: 10px;
 }
 
 div.content {
@@ -88,7 +92,7 @@ img.img-submit {
     vertical-align: middle;
 }
 
-button[type="submit"]:hover img.img-submit {
+div.input button[type="submit"]:hover img.img-submit {
     opacity: 1;
 }
 
