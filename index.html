@@ -12,7 +12,8 @@
 </head>
 <body class="body">
     <div name="setting">
-        <img class="icon-setting" draggable="false" src="icons/icon-setting.svg" onclick="openSetting()" alt="" />
+        <img class="icon-setting" draggable="false" src="icons/icon-setting.svg" onclick="openSetting()" alt="~setting" />
+        <img class="icon-upload" draggable="false" src="icons/icon-upload.svg" alt="~upload">
         <table class="box-setting" id="box-setting">
             <tr>
                 <td>BAHASA</td>
@@ -25,18 +26,18 @@
             </tr>
         </table>
     </div>
-    <div class="content" id="content">
-        <h1>Sumber&nbsp;Doksli</h1>
-        <form action="" onsubmit="return sumberDoksli()" id="searchEngine">
-            <div class="input">
+    <div name="content">
+        <div class="engine-search" id="engine-search">
+            <h1>Sumber&nbsp;Doksli</h1>
+            <form action="" class="input" onsubmit="return sumberDoksli()">
                 <input class="bar-search" id="bar-search" type="text" spellcheck="false" autocomplete="off" placeholder="Cari doksli meme di sini..." />
                 <button type="submit" class="btn-submit">
                     <img class="img-submit" draggable="false" src="icons/icon-search.svg" alt="" />
                 </button>
-            </div>
-        </form>
-        <div id="dataContent">
-            <div class="values" id="dok1">
+            </form>
+        </div>
+        <div class="indeks-value">
+            <div class="doksli" id="dok1">
                 <a class="link-content" target="_blank" href="https://www.tiktok.com/@dennis_tayag/video/7258148852295896326">
                     <section class="box-content">
                          <img class="img-content" id="contoh" src="https://media.tenor.com/RnrsuhsOnO4AAAAe/si-imut-dari-pulau-jawa-always-on-my-mind.png" alt="~doksli">
