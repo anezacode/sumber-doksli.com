@@ -11,24 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="body">
+    <div id="setting" class="setting">
+        <img class="icon-setting" draggable="false" src="icons/icon-setting.svg" onclick="openSetting()" alt="" />
+        <table>
+            <tr id="language">
+                <td>Language</td>
+                <td>
+                    <select name="language" id="">
+                        <option value="1">Indonesian</option>
+                        <option value="2">English</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="content" id="content">
         <h1>Sumber&nbsp;Doksli</h1>
-        <form id="searchEngine">
+        <form action="" onsubmit="return sumberDoksli()" id="searchEngine">
             <div class="input">
-                <input class="bar-search" type="text" spellcheck="false" autocomplete="off" placeholder="Cari doksli meme di sini..." />
+                <input class="bar-search" id="bar-search" type="text" spellcheck="false" autocomplete="off" placeholder="Cari doksli meme di sini..." />
                 <button type="submit" class="btn-submit">
                     <img class="img-submit" draggable="false" src="icons/icon-search.svg" alt="" />
                 </button>
             </div>
         </form>
-        <ul>
-            <li>
-                <img class="icon-setting" draggable="false" src="icons/icon-setting.svg" alt="" />
-            </li>
-        </ul>
-        <!--
         <div id="dataContent">
-            <div class="values">
+            <div class="values" id="dok1">
                 <a class="link-content" target="_blank" href="https://www.tiktok.com/@dennis_tayag/video/7258148852295896326">
                     <section class="box-content">
                          <img class="img-content" id="contoh" src="https://media.tenor.com/RnrsuhsOnO4AAAAe/si-imut-dari-pulau-jawa-always-on-my-mind.png" alt="~doksli">
@@ -36,9 +44,10 @@
                     </section>
                 </a>
             </div>
-        </div>-->
+        </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="engine.js"></script>
+<script src="service.js"></script>
 <script src="keydown.js"></script>
 </html>
