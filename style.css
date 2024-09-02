@@ -39,11 +39,7 @@ body.body {
     font-family: poppins;
 }
 
-img.icon-setting {
-    float: right;
-}
-
-img.icon-upload {
+img.icon-setting, img.icon-upload {
     float: right;
 }
 
@@ -55,7 +51,7 @@ table.box-setting tr td:first-child {
     padding-right: 10px;
 }
 
-div.engine-search {
+div.engine {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -63,18 +59,23 @@ div.engine-search {
     transform: translate(-50%, -50%);
 }
 
+h1.title {
+    padding: 10px;
+}
+
 form.input {
     background-color: white;
     border-radius: 30px;
-    width: 320px;
+    width: 360px;
     display: flex;
-    padding: 5px;
+    padding: 10px;
     justify-content: space-between;
 }
 
 input.bar-search {
     background: none;
     border: none;
+    font-size: large;
     width: 100%;
     font-family: poppins;
     vertical-align: middle;
