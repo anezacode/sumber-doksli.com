@@ -89,8 +89,7 @@ input.bar-search:focus {
 button.btn-submit {
     background: none;
     border: none;
-    width: 50px;
-    padding: 5px;   
+    width: 50px;   
     cursor: pointer;
 }
 
@@ -150,6 +149,7 @@ section.box-content:active {
 
 h3.h-content {
     position: absolute;
+    width: 80%;
     z-index: 3;
     top: 50%;
     left: 50%;
