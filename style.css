@@ -125,14 +125,14 @@ div[class$="doksli"] {
 section.box-content {
     position: relative;
     z-index: 2;
-    margin: 2px;
+    margin: 5px;
     cursor: pointer;
     user-select: none;
 }
 
 img.img-content {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 10px;
     border: 1px solid rgb(75,75,75);
     filter: brightness(0.5);
@@ -149,7 +149,7 @@ section.box-content:active {
 
 h3.h-content {
     position: absolute;
-    width: 80%;
+    width: 160px;
     z-index: 3;
     top: 50%;
     left: 50%;
